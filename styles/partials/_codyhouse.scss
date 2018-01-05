@@ -1,0 +1,37 @@
+// Credits for parallax go to https://codyhouse.co/gem/alternate-fixed-scroll-backgrounds/
+// codyhouse styles have been altered to fit the design of the website
+
+body, html, main {
+	/* important */
+	height: 100%;
+}
+
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/laptop.jpg");
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 20%;
+    border-radius: 170px;
+    border: solid #fff;
+  }
+  h1 {
+    color: #fff;
+  }
+}
+
+.cd-scrolling-bg {
+	min-height: 100%;
+}

@@ -1,0 +1,31 @@
+@import 'partials/softreset';
+@import 'partials/codyhouse';
+@import 'partials/grid';
+
+// trying to make the text go to the bottom
+// figure {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+// }
+
+section {
+  margin-bottom: 5%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+
+  .social-icon {
+    width: 20%;
+
+    figure {
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

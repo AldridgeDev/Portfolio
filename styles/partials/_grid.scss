@@ -1,0 +1,18 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  grid-template-rows: repeat(2, 48%);
+  grid-column-gap: 2%;
+  grid-row-gap: 10%;
+}
+
+.grid-item {
+
+  figure {
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+}
