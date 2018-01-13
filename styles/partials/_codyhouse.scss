@@ -26,10 +26,17 @@ body, html, main {
     width: 20%;
     border-radius: 170px;
     border: solid #fff;
+
   }
   h1 {
     color: #fff;
+		font-size: 3.5em;
+		border-bottom: solid 2px #fff;
+		margin-bottom:0;
   }
+	h2 {
+		color: #fff;
+	}
 }
 
 .cd-scrolling-bg {
