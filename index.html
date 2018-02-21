@@ -1,162 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
-  <title>Aldridge Portfolio</title>
+  <title>Document</title>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="#">
-        <img src="img/github.png" alt="Github">
-      </a>
-      <a href="#">
-        <img src="img/linkedin.png" alt="Linkedin">
-      </a>
-      <a href="#">About Me</a>
-      <a href="#">Resume</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="cd-fixed-bg cd-bg-1">
-      <img src="img/profile.jpg" alt="Profile picture">
-      <h1>Antonio Aldridge</h1>
-      <h2>Just Graduated - Seeking Employment</h2>
-    </div>
-  </header>
+  <h1>Antonio Aldridge</h1>
+	<div class="flex-container">
+		<figure>
+		<img src="img/profile.jpg" alt="Me">
+	</figure>
+		<div class="nav">
+			<a href="#projects">Projects</a>
+			<a href="#">Resume</a>
+			<a href="#">Github</a>
+		</div>
+	</div>
 
-  <main>
-    <div class="cd-scrolling-bg cd-color-2">
-      <section class="aboutme">
-        <h1>About Me</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa repellendus quod nostrum. Maiores, tenetur nemo enim reiciendis temporibus facere aliquam fugiat. Nulla, mollitia ab nobis molestiae voluptates fuga fugiat quos.</p>
-      </section>
-
-      <section class="projects">
-        <h1>Projects</h1>
-        <hr>
-        <div class="grid-container">
-          <div class="grid-item cit230">
-            <a href="http://byui.spartandesignweb.com/sampleAssignments/09-stormCenter/">
-              <figure>
-                <img src="img/cit230.png" alt="Cit 230 Project">
-                <figcaption>Cit 230 Project</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-item windsor">
-            <a href="http://windsorcommercial.com">
-              <figure>
-                <img src="img/windsor.png" alt="Windsor Commercial">
-                <figcaption>Windsor Commercial Internship Project</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-item video-tutorials">
-            <a href="http://www.byui.edu/academic-support-centers/tutoring-center/video-tutorials">
-              <figure>
-                <img src="img/videotuts.png" alt="BYUI Video Tutorials">
-                <figcaption>BYU-I Video Tutorials Project</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-item jquery_player">
-            <a href="http://www.byui.edu/academic-support-centers/tutoring-center/video-tutorials/intro-to-general-chemistry">
-              <figure>
-                <img src="img/jquery_player.png" alt="jQuery player project">
-                <figcaption>jQuery Youtube Player Project</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-item animation">
-            <a href="https://codepen.io/AntonioAldridge/pen/KygJNj">
-              <figure>
-                <img src="img/animation.png" alt="Pure CSS/SASS Animations Example">
-                <figcaption>Pure CSS/SASS Animations Example</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="grid-item angular">
-            <a href="https://github.com/AldridgeDev/FullStackProjects">
-              <figure>
-                <img src="img/coming-soon.jpg" alt="Angular Project">
-                <figcaption>Angular Project (coming soon)</figcaption>
-              </figure>
-            </a>
-          </div>
-          <!-- <div class="grid-item megamenu">
-            <a href="https://codepen.io/AntonioAldridge/pen/wqZYZb">
-              <figure>
-                <img src="img/megamenu.png" alt="Megamenu Project">
-                <figcaption>Megamenu for BYU-I Mobile (prototype)</figcaption>
-              </figure>
-            </a>
-          </div> -->
-        </div> <!-- grid container -->
-      </section>
-
-      <!-- <section class="social-media">
-        <h1>Social Media</h1>
-        <hr>
-        <div class="flex-container">
-          <div class="social-icon github">
-            <a href="https://github.com/AldridgeDev">
-              <figure>
-                <img src="img/github.png" alt="Github">
-                <figcaption>Github</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="social-icon facebook">
-            <a href="https://www.facebook.com/antonio.b.aldridge">
-              <figure>
-                <img src="img/facebook.png" alt="Facebook">
-                <figcaption>Facebook</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="social-icon linkedin">
-            <a href="https://www.linkedin.com/in/antonioaldridge/">
-              <figure>
-                <img src="img/linkedin.png" alt="Linkedin">
-                <figcaption>Linkedin</figcaption>
-              </figure>
-            </a>
-          </div>
+	<main>
+    <div class="modal" id="projects">
+      <div class="projects">
+        <div class="grid-item angular">
+          <a href="https://github.com/AldridgeDev/FullStackProjects">
+            <figure>
+              <img src="img/angular.png" alt="Angular Project">
+              <figcaption>Angular Project</figcaption>
+            </figure>
+          </a>
         </div>
-      </section> -->
-    </div> <!-- codyhouse -->
-
-    <hr>
-    <section class="info">
-      <div class="flex-container">
-        <div class="resume">
-          <h1>Resume</h1>
-          <div class="box">
-            <a href="resume.pdf">
-              <img src="img/resume_download.png" alt="Resume">
-            </a>
-          </div>
+        <div class="grid-item windsor">
+          <a href="http://windsorcommercial.com">
+            <figure>
+              <img src="img/php.png" alt="Windsor Commercial">
+              <figcaption>Windsor Commercial Internship Project</figcaption>
+            </figure>
+          </a>
         </div>
-        <div class="form">
-          <h1>Contact Me!</h1>
-          <p>Currently for hire</p>
-          <form>
-            <span>First Name: <input type="text"></span>
-            <span>Last Name: <input type="text"></span>
-            <span>Email: <input type="text"></span>
-            <span>Contact Phone Number: <input type="text"></span>
-          </form>
+        <div class="grid-item video-tutorials">
+          <a href="http://www.byui.edu/academic-support-centers/tutoring-center/video-tutorials">
+            <figure>
+              <img src="img/byui.png" alt="BYUI Video Tutorials">
+              <figcaption>BYU-I Video Tutorials Project</figcaption>
+            </figure>
+          </a>
         </div>
+        <div class="grid-item animation">
+          <a href="https://codepen.io/AntonioAldridge/pen/KygJNj">
+            <figure>
+              <img src="img/sass.png" alt="Pure CSS/SASS Animations Example">
+              <figcaption>Pure CSS/SASS Animations Example</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-item cit230">
+          <a href="http://byui.spartandesignweb.com/sampleAssignments/09-stormCenter/">
+            <figure>
+              <img src="img/html_css.png" alt="Cit 230 Project">
+              <figcaption>Front-End Development Project</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="grid-item jquery_player">
+          <a href="http://www.byui.edu/academic-support-centers/tutoring-center/video-tutorials/intro-to-general-chemistry">
+            <figure>
+              <img src="img/jquery.png" alt="jQuery player project">
+              <figcaption>jQuery Youtube Player Project</figcaption>
+            </figure>
+          </a>
+        </div>
+        <a href="#modal-close" class="close">Close</a>
       </div>
-
-    </section>
+    </div>
   </main>
-
 </body>
-
 </html>

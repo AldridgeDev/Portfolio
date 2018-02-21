@@ -1,45 +1,93 @@
-@import 'partials/softreset';
-@import 'partials/nav';
-@import 'partials/codyhouse';
-@import 'partials/grid';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'grid';
+@import 'modal';
 
-// trying to make the text go to the bottom
-// figure {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-end;
-// }
+// Variables
+$f-size: 2.75em;
+$fam: 'Roboto', sans-serif;
 
-section {
-  margin-bottom: 5%;
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/ash-edmonds-fx.jpg");
+  background-size:cover;
+}
+
+h1 {
+	color:#fff;
+	font-family: $fam;
+	font-size: $f-size;
+	padding: 0 1em;
+  animation: slide-in 2s ease;
+}
+
+.nav {
+  animation: slide-in 2s ease;
+}
+
+@keyframes slide-in {
+  0% {transform: translate(-200%)}
+  100% {transform: translate(0)}
+}
+
+figure {
+	width: 10vw;
+}
+
+figure img {
+	width: 100%;
+}
+
+.grid-item a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: $fam;
+
+  figure:hover{
+    transition: transform 0.2s ease-out;
+    transform: scale(1.15);
+  }
 }
 
 .flex-container {
-  display: flex;
-  justify-content: space-around;
+	display:flex;
+}
 
-  .social-icon {
-    width: 20%;
+.nav {
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+}
 
-    figure {
-      text-align: center;
+.nav a {
+	color: #fff;
+	text-decoration: none;
+	font-family: $fam;
+	transition: transform 0.2s ease-out;
+}
 
-      img {
-        width: 100%;
-      }
-    }
+.nav a:hover {
+	transform: scale(1.15);
+}
+
+.close {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+
+  &:hover {
+    color: red;
   }
 }
 
-.box {
-  width: 50%;
-
-  img {
-    width: 100%;
-  }
+//fixes
+.windsor {
+  margin-top: 10%;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
+// lightspeed
