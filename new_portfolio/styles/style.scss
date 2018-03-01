@@ -1,0 +1,72 @@
+// variables
+$bk: #081534;
+
+// mixins
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bk;
+  font-family: 'Source Code Pro', monospace;
+}
+
+section {
+  padding: 20%;
+}
+
+.gen-header {
+  color: #fff;
+  text-align: center;
+  font-size: 52px;
+}
+
+.gen-figure {
+  width: 15vw;
+  margin: 0 auto;
+}
+
+.gen-img {
+  width: 100%;
+}
+
+.third-section {
+
+  h6 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+span.sassy {
+  color: pink;
+}
+
+footer {
+  padding: 2%;
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    .github img {
+      width: 5vw;
+    }
+  }
+}
+
+
+
+
+// lightspeed
