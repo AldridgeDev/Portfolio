@@ -9,37 +9,38 @@
   <title>Anton.io's Portfolio</title>
 </head>
 <body>
+  <a href="#" class="scroll-btn"><span></span><span></span><span></span></a>
   <section class="first-section">
-    <h1 class="gen-header">Hi, My Name is Antonio</h1>
+    <h1 class="gen-header"><span class="ityped-1"></span></h1>
     <figure class="gen-figure">
       <img src="img/profile.jpg" class="gen-img" alt="Antonio Aldridge">
     </figure>
   </section>
 
-  <section class="second-section">
+  <section class="second-section hideme">
     <h1 class="gen-header">I've done a bit of Angular 2</h1>
     <figure class="gen-figure">
       <img src="img/angular.png" class="gen-img" alt="Angular logo">
     </figure>
   </section>
 
-  <section class="third-section">
+  <section class="third-section hideme">
     <h1 class="gen-header">I've constructed a site for a construction company</h1>
     <h6>Say what?</h6>
     <figure class="gen-figure">
-      <img src="img/building.png" alt="Windsor Homes" class="gen-img">
+      <img src="img/building.png" alt="Windsor Homes" class="gen-img windsor-img">
     </figure>
   </section>
 
-  <section class="fourth-section">
+  <section class="fourth-section hideme">
     <h1 class="gen-header">I can be a little <span class="sassy">sassy</span></h1>
     <figure class="gen-figure">
       <img src="img/sass.png" class="gen-img" alt="Sassy">
     </figure>
   </section>
 
-  <section class="last-section">
-    <h1 class="gen-header">But mostly, I love to code</h1>
+  <section class="last-section hideme">
+    <h1 class="gen-header">But mostly, <span class="ityped-2"></span></h1>
     <h1 class="gen-header">And I can do it for you</h1>
   </section>
 
@@ -56,5 +57,45 @@
       </div>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/ityped.min.js"></script>
+  <script>
+    window.ityped.init(document.querySelector('.ityped-1'),{
+      strings : ['Hi, My Name is Antonio'],
+      loop : true
+    });
+
+    window.ityped.init(document.querySelector('.ityped-2'),{
+      strings : ['I love to code'],
+      loop : true
+    });
+
+    $(window).scroll(function() {
+       if($(window).scrollTop() + $(window).height() == $(document).height()) {
+           $('.scroll-btn').hide();
+       } else {
+         $('.scroll-btn').show();
+       }
+    });
+
+  $(document).ready(function(){
+    $(window).scroll(function(){
+      $('.hideme').each(function(i){
+        var bottom_of_object = $(this).position().top + $(this).outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if (bottom_of_window > bottom_of_object){
+          $(this).animate({'opacity':'1'}, 1000);
+        }
+      });
+    });
+  });
+
+
+
+  </script>
 </body>
 </html>
