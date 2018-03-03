@@ -1,0 +1,146 @@
+//*****************************************
+//            General 
+//*****************************************
+
+body {
+  background-color: $bk;
+  font-family: 'Source Code Pro', monospace;
+}
+
+main {
+  width: 90%;
+}
+
+section {
+  margin-bottom: 40%;
+}
+
+.snug-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gen-figure {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gen-img {
+  width: 100%;
+  max-width: 368px;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 2%;
+
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: #fff;
+      font-size: 1em;
+    }
+
+    .github img {
+      width: 5vw;
+    }
+  }
+}
+
+// no updog stamp
+.updog-stamp {
+  display: none !important;
+}
+
+//*****************************************
+//            Typography 
+//*****************************************
+
+h1, h2 {
+  color: #fff;
+}
+
+.third-section h6 {
+  text-align: center;
+  color: #fff;
+}
+
+.eight-bit {
+  font-family: Eight-bit, monospace;
+  font-size: 1.5em;
+}
+
+@font-face {
+  font-family: "Eight-bit";
+  src: url('../Eight-bit.ttf') format('truetype');
+}
+
+//*****************************************
+//            Views and Alignment
+//*****************************************
+
+.flex {
+  display: flex;
+}
+
+.small-view {
+  display: block;
+}
+
+.large-view {
+  display: none;
+}
+
+.brief-info {
+  color: #fff;
+}
+
+.hideme {
+  opacity: 0;
+}
+
+.mobi-header {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 5%;
+}
+
+.mobi-img {
+  width: 50%;
+}
+
+.xl {
+  font-size: 2.75em;
+}
+
+.tags {
+  width: 70%;
+}
+
+.direction {
+  flex-direction: column-reverse;
+}
+
+//*****************************************
+//            Colors 
+//*****************************************
+
+.sm-header {
+  color: #fff;
+}
+
+span.sassy {
+  color: pink;
+}
+
+//*****************************************
+//             Javascript Related
+//*****************************************
+
+.ityped-cursor {
+  color: #fff;
+}

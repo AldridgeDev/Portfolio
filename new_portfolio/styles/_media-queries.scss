@@ -1,0 +1,61 @@
+@media screen and (min-width: 968px) {
+  section {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  section:first-of-type {
+    margin-top: 15%;
+  }
+
+  section:last-of-type {
+    margin-bottom: 20%;
+  }
+
+  .gen-header {
+    color: #fff;
+    text-align: center;
+    font-size: 52px;
+  }
+
+  .small-view {
+    display: none;
+  }
+    
+  .lg-left {
+    text-align: left;
+  }
+
+  .large-view {
+    display: block;
+  }
+
+  .gen-figure {
+    width: 15vw;
+  }
+
+  .windsor-img {
+    transition: border-bottom .25s, padding-bottom .25s;
+  }
+
+  .windsor-img:hover {
+    border-bottom: 10px solid red;
+    padding-bottom: 8%;
+    cursor: pointer;
+  }
+
+  .eight-bit {
+    font-size:70px;
+  }
+
+  footer .flex-container a {
+    font-size: 1.5em;
+  }
+    
+  .direction {
+    flex-direction: row;
+  }
+
+}
