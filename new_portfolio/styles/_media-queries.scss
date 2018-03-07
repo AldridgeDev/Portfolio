@@ -23,7 +23,7 @@
   .small-view {
     display: none;
   }
-    
+
   .lg-left {
     text-align: left;
   }
@@ -34,6 +34,16 @@
 
   .gen-figure {
     width: 15vw;
+  }
+
+  .angular-img {
+    transition: border-bottom .25s, padding-bottom .25s;
+  }
+
+  .angular-img:hover {
+    border-bottom: 10px solid limegreen;
+    padding-bottom: 8%;
+    cursor: pointer;
   }
 
   .windsor-img {
@@ -53,7 +63,7 @@
   footer .flex-container a {
     font-size: 1.5em;
   }
-    
+
   .direction {
     flex-direction: row;
   }

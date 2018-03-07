@@ -1,5 +1,5 @@
 //*****************************************
-//            General 
+//            General
 //*****************************************
 
 body {
@@ -56,7 +56,7 @@ footer {
 }
 
 //*****************************************
-//            Typography 
+//            Typography
 //*****************************************
 
 h1, h2 {
@@ -94,8 +94,26 @@ h1, h2 {
   display: none;
 }
 
-.brief-info {
+.info,
+.toggle-details {
   color: #fff;
+}
+
+.toggle-details {
+  transition: border-bottom .35s;
+}
+
+.toggle-details:hover {
+  border-bottom: 3px solid red;
+  cursor: pointer;
+}
+
+.details {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .hideme {
@@ -126,7 +144,7 @@ h1, h2 {
 }
 
 //*****************************************
-//            Colors 
+//            Colors
 //*****************************************
 
 .sm-header {

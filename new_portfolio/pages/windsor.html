@@ -12,37 +12,72 @@
    <div class="snug-container">
         <h1 class="gen-header lg-left">Windsor</h1>
         <hr>
-        
+
         <aside class="brief">
             <h2 class="sm-header">The Basics</h2>
             <div class="flex direction">
-                <div class="brief-info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quis expedita in culpa enim veritatis tempora ex ea natus? Mollitia molestiae voluptatum architecto explicabo officia eum, debitis tempore magnam nihil?</p>
-                    <ul>
-                        <li>First description</li>
-                        <li>Second description</li>
-                        <li>Third description</li>
-                    </ul>
-                    <br>
-                <div class="tags flex-container">
-                  <span>Tags: </span>
-                  <span>Tag</span>
-                  <span>Tag</span>
-                  <span>Tag</span>
-                  <span>Tag</span>
-                  <span>Tag</span>
-                </div>
+                <div class="info">
+                  <p>
+                    The website for Windsor Commercial is built entirely on vanilla php and MySQL to meet customization necessities.
+                    Following an agile approach, we constructed a template to follow for the frontend and finished with the backend.
+                    The easy to follow CMS is used by other employers to add on to the website without knowing code.
+                  </p>
+                  <br>
+                  <div class="tags flex-container">
+                    <span>Tags: </span>
+                    <span>php</span>
+                    <span>MySQL</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>CMS</span>
+                  </div>
                 </div>
                 <figure class="gen-figure mobi-img">
                     <img src="../img/building.png"  class="gen-img" alt="Windsor Image">
                 </figure>
             </div>
         </aside>
-        
+        <br>
+        <span class="toggle-details">Want more details?</span>
+        <br><br>
         <div class="details">
-            <h3 class="sm-header">The Details</h3>
+          <h2 class="sm-header">The Details</h2>
+          <div class="info">
+            <p>
+              The beginning stages of the project composed entirely of creating a template for the website. We used the design layout
+              from Windsor's <a href="http://www.windsorhomes.us">Home website</a>. All styles are done in CSS 3 and is mobile friendly.
+            </p>
+            <p>
+              The second stage was building backend components. The ability to see all construction projects or only certain construction
+              projects are handled with database queries. These queries allow employees who have access to the CMS to Add, Edit,
+              Delete, and Archive construction projects from the website.
+            </p>
+            <ul>
+              <li>Adding allows CMS users to create a new construction project with descriptions and images</li>
+              <li>Editing allows CMS users to change current projects on display or that have been archived</li>
+              <li>Deleting completely removes project access from the CMS user, but still remains in the database
+              and can only be completely removed from the database by an admin</li>
+              <li>Archiving CMS content allows for upcoming construction projects to be written but not posted, or
+              for projects to be removed but accessable for a future return</li>
+            </ul>
+          </div>
         </div>
     </div>
 
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+    $(".toggle-details").click(function(){
+      $(".details").toggleClass("active");
+    });
+  });
+
+  // $( "p" ).click(function() {
+  //   $( this ).toggleClass( "highlight" );
+  // });
+</script>
 </body>
 </html>
